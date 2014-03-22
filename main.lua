@@ -26,8 +26,8 @@ function love.load()
 
 	-- Body positions
 	straight = love.graphics.newQuad(0, 0, 12, 60, 80, 60)
-	shoot = love.graphics.newQuad(11, 0, 22, 60, 80, 60)
-	bent = love.graphics.newQuad(33, 0, 15, 60, 80, 60)
+	shoot = love.graphics.newQuad(12, 0, 22, 60, 80, 60)
+	bent = love.graphics.newQuad(34, 0, 16, 60, 80, 60)
 
 	position1 = straight
 	position2 = straight
@@ -88,8 +88,8 @@ function love.draw()
 	love.graphics.reset()
 	love.graphics.draw(bg, 0, 0)
 
-	love.graphics.draw(guy1, position1, c1.b:getX(), love.graphics.getHeight()/2.5, 0, 4, 4, 3, 4)
-	love.graphics.draw(guy2, position2, c2.b:getX(), love.graphics.getHeight()/2.5, 0, -4, 4, 3, 4)
+	love.graphics.draw(guy1, position1, 40, love.graphics.getHeight()/2.5, 0, 4, 4, 3, 4)
+	love.graphics.draw(guy2, position2, 760, love.graphics.getHeight()/2.5, 0, -4, 4, 3, 4)
 
 	love.graphics.draw(tweed, rolling, tweedDisplacement, tweedHeight, tweedRotation, 3, 3)
 
